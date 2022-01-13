@@ -1,0 +1,80 @@
+input[type="radio"]{
+    display: none;
+}
+
+.categorias {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.categorias img {
+    height: 120px;
+    width: 190px;
+    margin: 15px;
+    cursor: pointer ;
+    opacity: 0.8;
+}
+
+.categorias img:hover {
+    opacity: 1;
+}
+
+[value="TODOS"]:checked ~ .productos .producto[data-category~="TODOS"]{
+    display: block;
+}
+
+
+[value="POPULARES"]:checked ~ .productos .producto:not([data-category~="POPULARES"]),
+[value="SUPLEMENTOS"]:checked ~ .productos .producto:not([data-category~="SUPLEMENTOS"]),
+[value="SNACKS"]:checked ~ .productos .producto:not([data-category~="SNACKS"]),
+[value="ACCESORIOS"]:checked ~ .productos .producto:not([data-category~="ACCESORIOS"]),
+[value="ROPA_HOMBRE"]:checked ~ .productos .producto:not([data-category~="ROPA_HOMBRE"]),
+[value="ROPA_MUJER"]:checked ~ .productos .producto:not([data-category~="ROPA_MUJER"]){
+    display: none;
+}
+
+[value="TODOS"]:checked ~ .categorias [for="TODOS"],
+[value="POPULARES"]:checked ~ .categorias [for="POPULARES"],
+[value="SUPLEMENTOS"]:checked ~ .categorias [for="SUPLEMENTOS"],
+[value="SNACKS"]:checked ~ .categorias [for="SNACKS"],
+[value="ACCESORIOS"]:checked ~ .categorias [for="ACCESORIOS"],
+[value="ROPA_HOMBRE"]:checked ~ .categorias [for="ROPA_HOMBRE"],
+[value="ROPA_MUJER"]:checked ~ .categorias [for="ROPA_MUJER"]{
+    background:#2999ad;
+    color: #fff;
+}
+
+#tituloRopa h1 {
+    font-weight: 100;
+    font-size: 45px;
+    float: left;
+    margin-left: 15px;
+}
+
+#ropaHombre {
+    height: 380px;
+    width: 600px;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+#ropaMujer {
+    height: 380px;
+    width: 600px;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.menu #a5{
+    background-color: rgb(230, 228, 228);
+    color: #2999ad;
+    text-decoration: none;
+    float: left;
+    height: 30px;
+    width: 16.66666%;
+    text-align: center;
+    padding-top: 12px;
+}

@@ -1,0 +1,35 @@
+.menu{
+    width: 100%;
+    overflow: hidden;
+    position: sticky;
+    z-index: 100;
+}
+.menu #a1{
+    background-color: rgb(230, 228, 228);
+    color: #2999ad;
+    text-decoration: none;
+    float: left;
+    height: 30px;
+    width: 16.66666%;
+    text-align: center;
+    padding-top: 12px;
+}
+
+#nutricion {
+    color: white;
+    position: relative;
+    right: 505px;
+    bottom: 300px;
+    font-size: 55px;
+
+}
+
+#nutricion2 {
+    color: white;
+    position: relative;
+    right: 450px;
+    bottom: 330px;
+    font-size: 20px;
+    font-weight: 100;
+
+}

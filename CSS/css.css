@@ -1,0 +1,521 @@
+body {
+    width: 100%;
+    text-align: center;
+    background-color:  rgb(255, 255, 255);
+    background-size: cover;
+}
+
+.div1 {
+    margin: auto;
+    width: 100%;
+    height: 75px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255); 
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 100;
+    top: 1px;
+
+}
+
+.search {
+    width: 90px;
+    float: right;
+    background-color: #2999ad;
+    color: #fff;
+    transition: color .3s,background-color .3s,border-color .3s,opacity .3s;
+    height: 40px;
+    margin-right: 400px;
+    margin-left: 0px;
+    margin-top: 40px;
+    display: block;
+    cursor: pointer;
+    border: 0;
+    position: relative;
+    right: 165px;
+
+}
+
+.search:hover {
+    background-color: rgb(230, 228, 228) ;
+}
+
+#lupa {
+    height: 26px;
+    width: 25px;
+    padding: 7px;
+    position: relative;
+    right: 182px;
+}
+
+#search2 {
+    width: 450px;
+    height: 40px;
+    float: center;
+    margin-top: 40px;
+    margin-left: 222px;
+    position: relative;
+}
+
+#carro {
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin: 10px;
+    position: relative;
+    left: 350px;
+    top: 25px;
+    padding: 10px;
+}
+#user {
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin: 10px;
+    position: relative;
+    left: 350px;
+    top: 19px;
+    padding: 10px;
+}
+
+#logo {
+    height: 90px ;
+    width: 165px ;
+    margin: 15px;
+    margin-top: 0px;
+    float: left;
+    transition:all 0.5s ease;
+    border-radius: 10px;
+}
+
+.menu{
+    width: 100%;
+    overflow: hidden;
+    position: sticky;
+    z-index: 100;
+}
+.menu a{
+    background-color: #2999ad;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    float: left;
+    height: 30px;
+    width: 16.66666%;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.menu a:hover{
+    background-color: rgb(230, 228, 228);
+    color: #2999ad;
+}
+
+#navegacion {
+    width: 1580px;
+    height: 25px;
+    background-color:  #2999ad;
+    position: sticky;
+    z-index: 100;
+    top: 130px;
+}
+
+
+#oferta {
+    width: 1580px;
+    height: 400px;
+    margin-bottom: 0px;
+    padding: 0%;
+}
+
+#slider {
+    width: 95%;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+#slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-in;
+}
+
+#slider li {
+    width: 100%;
+    list-style: none;
+}
+
+#slider img {
+    width: 100%;
+    height: 400px;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+.contingut1{
+    width: 100%;
+    height: 350px;
+    background-color: #f0f0f0;
+    text-align: left;
+    overflow: hidden;
+}
+
+#pi, #pa, #po, #pu {
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    font-style: bold;
+}
+
+.derechosTitle {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.condicionesHol {
+    font-size: 20px;
+}
+
+#marca1 {
+    height: 150px;
+    width: 250px;
+    padding: 20px;
+    float: center;
+}
+
+#marca2 {
+    height: 150px;
+    width: 90px;
+    padding: 20px;
+    margin-left: 80px;
+    margin-right: 40px;
+    float: center;
+}
+
+#marca3 {
+    height: 150px;
+    width: 300px;
+    padding: 20px;
+    float: center;
+}
+
+.contingut2 {
+    width: 100%;
+    background-color: #333434;
+    overflow: hidden;
+}
+
+
+.cabecera {
+    margin-top: -15px;
+    background-color: cyan;
+}
+
+footer, #blanco {
+    font-size: 11px;
+    color: white;
+    height: 70px;
+    background-color: black;  
+}
+
+
+body{
+    background-color: lightgrey;
+    font-family: sans-serif;
+}
+  
+.div2{
+    margin: auto;
+    background-color:rgb(243, 243, 243);
+    width: 100%;
+    padding: 30px;
+}
+
+.masvendidos {
+    margin: auto;
+    background-color:rgb(243, 243, 243);
+    width: 100%;
+    padding: 30px;
+}
+
+.suplementos {
+    margin: auto;
+    background-color:rgb(243, 243, 243);
+    width: 100%;
+    padding: 30px;
+}
+
+.snacks {
+    margin: auto;
+    background-color:rgb(243, 243, 243);
+    width: 100%;
+    padding: 30px;
+}
+
+.accesorios {
+    margin: auto;
+    background-color:rgb(243, 243, 243);
+    width: 100%;
+    padding: 30px;
+}
+  
+
+
+.footer {
+    margin: auto;
+    background-color: black;
+    width: 100%;
+    height: 25px;
+    padding: 30px;
+    color: white;
+    font-size: 10px;
+}
+
+.imatge {
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    position: sticky;
+    z-index: 1;
+}
+
+.star {
+    float: left;  
+    margin-left: 16px;  
+    position: sticky;
+    z-index: 1;
+}
+
+.h4 {
+    float: left;
+    margin-left: 70px; 
+    position: sticky;
+    z-index: 1;
+}
+.valoracions{
+    font-size: 12px;
+    margin-top: 15px;
+    margin-right: 19px;
+    position: sticky;
+    z-index: 1;
+}
+.valoracions2{
+    font-size: 12px;
+    margin-top: 15px;
+    margin-right: 32px;
+    position: sticky;
+    z-index: 1;
+}
+
+.valoracions3{
+    font-size: 12px;
+    margin-top: 15px;
+    margin-right: 70px;
+    position: sticky;
+    z-index: 1;
+}
+.valoracions4{
+    font-size: 12px;
+    margin-top: 15px;
+    margin-right: 100px;
+    position: sticky;
+    z-index: 1;
+}
+.valoracions5{
+    font-size: 12px;
+    margin-top: 15px;
+    margin-right: 90px;
+    position: sticky;
+    z-index: 1;
+}
+.valoracions6{
+    font-size: 12px;
+    margin-top: 15px;
+    margin-right: 50px;
+    position: sticky;
+    z-index: 1;
+}
+
+.pvp {
+    text-align: left;
+    margin-left: 70px;
+    font-size: 13px;
+    color: rgb(87, 86, 86);
+}
+
+.pf {
+    text-align: left;
+    margin-left: 70px;
+}
+.form-register {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+  
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.apartados {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #2999ad;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+.apartados2 {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #2999ad;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: #2999ad;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+#telegram1 {
+    width: 33%;
+    float: left;
+    margin-left: 6px;
+    margin-top: 40px;
+    height: 800px;
+}
+
+#telegram1 h3 {
+    float: left;
+    margin-left: 33px;
+    color: rgb(59, 59, 59);
+}
+
+#telegram1 p {
+    float: left;
+    text-align: justify;
+    margin-left: 33px;
+    position: relative;
+    bottom: 17px;
+    width: 425px;
+    line-height: 25px;
+    
+}
+
+#telegram2 {
+    width: 33%;
+    float: left;
+    margin: 0%;
+    margin-left: 3px;
+    margin-top: 40px;
+    height: 800px;
+}
+
+#telegram2 h3 {
+    float: left;
+    margin-left: 33px;
+    color: rgb(59, 59, 59);
+}
+
+#telegram2 p {
+    float: left;
+    text-align: justify;
+    margin-left: 33px;
+    position: relative;
+    bottom: 17px;
+    width: 425px;
+    line-height: 25px;
+}
+
+#telegram3 {
+    width: 33%;
+    float: left;
+    margin: 0%;
+    margin-left: 3px;
+    margin-top: 40px;
+    height: 800px;
+}
+
+#telegram3 h3 {
+    float: left;
+    margin-left: 33px;
+    color: rgb(59, 59, 59);
+}
+
+#telegram3 p {
+    float: left;
+    text-align: justify;
+    margin-left: 33px;
+    position: relative;
+    bottom: 17px;
+    width: 425px;
+    line-height: 25px;
+}
+
+.botonT {
+    margin-bottom: 40px;
+    color: #2999ad;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid #2999ad;
+    float: left;
+    margin-left: 33px;
+    position: relative;
+    bottom: 10px;
+    padding: 10px 20px;
+    font-size: 17px;
+    border-radius: 4px;
+    -webkit-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.52); 
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.52);
+    cursor: pointer;
+}
+

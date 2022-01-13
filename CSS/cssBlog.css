@@ -1,0 +1,329 @@
+.menu{
+    width: 100%;
+    overflow: hidden;
+    position: sticky;
+    z-index: 100;
+}
+.menu #a4{
+    background-color: rgb(230, 228, 228);
+    color: #2999ad;
+    text-decoration: none;
+    float: left;
+    height: 30px;
+    width: 16.66666%;
+    text-align: center;
+    padding-top: 12px;
+}
+
+#categoria {
+    font-size: 12px;
+    color: gray;
+    font-weight: bold;
+    position: relative;
+    top: 130px;
+    right: 137px;
+}
+#primerApartado {
+    width: 40%;
+    height: 500px;
+    float: left;
+}
+
+#primerApartado h1 {
+    font-size: 35px;
+    text-align: justify;
+    margin-left: 100px;
+    margin-top: 150px;
+    margin: 140px;
+}
+
+#primerApartado h1:hover {
+    color: #2999ad;
+}
+#autor {
+    font-size: 12px;
+    position: relative;
+    right: 69px;
+    bottom: 120px;
+}
+
+#imagenPrimerApartado {
+    width: 60%;
+    height: 500px;
+    float: right;
+}
+
+#imagenPrimerApartado img {
+    width: 720px;
+    height: 450px;
+    float: left;
+    position: relative;
+    top: 20px;
+}
+
+#apartado1 {
+    width: 50%;
+    float: left;
+    height: 460px;
+}
+
+#apartado1 img {
+    width: 577px;
+    height: 300px;
+    float: left;
+    margin-left: 140px;
+}
+
+#categoria1 {
+    font-size: 12px;
+    color: gray;
+    font-weight: bold;
+    position: relative;
+    right: 212px;
+    top: 15px;
+}
+
+#autor1 {
+    font-size: 12px;
+    position: relative;
+    right: 145px;
+}
+
+#tituloBlog1 {
+    position: relative;
+    left: 2px;
+    top: 5px;
+}
+
+#tituloBlog1:hover {
+    color: #2999ad;
+}
+
+#apartado2 {
+    width: 25%;
+    float: right;
+    height: 460px;
+}
+
+#apartado2 img {
+    width: 280px;
+    height: 200px;
+    float: left;
+    position: relative;
+    right: 90px;
+}
+#categoria2 {
+    font-size: 12px;
+    color: gray;
+    font-weight: bold;
+    position: relative;
+    right: 394px;
+    top: 200px;
+    
+}
+
+#autor2 {
+    font-size: 12px;
+    position: relative;
+    right: 183px;
+    top: 26px;
+    
+}
+
+#tituloBlog2 {
+    position: relative;
+    width: 210px;
+    right: 90px;
+    top: 35px;
+    text-align: justify;
+    
+}
+
+#tituloBlog2:hover {
+    color: #2999ad;
+}
+
+#apartado3 {
+    width: 25%;
+    float: right;
+    height: 460px;
+}
+
+#apartado3 img {
+    width: 280px;
+    height: 200px;
+    float: left;
+    position: relative;
+    right: 17px;
+}
+
+#categoria3 {
+    font-size: 12px;
+    color: gray;
+    font-weight: bold;
+    position: relative;
+    right: 320px;
+    top: 200px;
+}
+
+#autor3 {
+    font-size: 12px;
+    position: relative;
+    right: 114px;
+    top: 26px;
+}
+
+#tituloBlog3 {
+    position: relative;
+    right: 17px;
+    top: 35px;
+    width: 257px;
+    text-align: justify; 
+}
+
+#tituloBlog3:hover {
+    color: #2999ad;
+}
+
+
+#apartado4 img {
+    width: 800px;
+    height: 400px;
+}
+
+#categoria4 {
+    font-size: 12px;
+    color: gray;
+    font-weight: bold;
+    position: relative;
+    right: 373px;
+}
+
+#autor4 {
+    font-size: 12px;
+    position: relative;
+    right: 313px;
+}
+
+#tituloBlog4 {
+    position: relative;
+    left: 360px;
+    width: 650px;
+    text-align: justify; 
+}
+
+#tituloBlog4:hover {
+    color: #2999ad;
+}
+
+#apartado4 {
+    height: 1550px;
+}
+
+.apartado5 hr {
+    width: 820px;
+}
+
+.apartado5_1 {
+    width: 50%;
+    float: left;
+    height: 250px;
+}
+
+.apartado5_1 img{
+    height: 200px;
+    width: 270px;
+    margin-left: 210px;
+    margin-top: 20px;
+}
+
+.apartado5_2 {
+    width: 50%;
+    float: right;
+    height: 250px;
+}
+
+#categoria5 {
+    font-size: 12px;
+    color: gray;
+    font-weight: bold;
+    position: relative;
+    right: 442px;
+    top: 50px;
+}
+
+#autor5 {
+    font-size: 12px;
+    position: relative;
+    right: 400px;
+    top: 60px;
+
+}
+
+#tituloBlog5 {
+    position: relative;
+    text-align: justify; 
+    right: 105px;
+    top: 50px;
+    width: 440px;
+}
+
+#tituloBlog5:hover {
+    color: #2999ad;
+}
+
+#categoria6 {
+    font-size: 12px;
+    color: gray;
+    font-weight: bold;
+    position: relative;
+    right: 462px;
+    top: 50px;
+}
+
+#tituloBlog6 {
+    position: relative;
+    text-align: justify; 
+    right: 110px;
+    top: 50px;
+    width: 440px;
+}
+
+#tituloBlog6:hover {
+    color: #2999ad;
+}
+
+.apartado6 hr {
+    width: 820px;
+}
+
+.apartado6_1 {
+    width: 50%;
+    float: left;
+    height: 300px;
+}
+
+.apartado6_1 img{
+    height: 200px;
+    width: 270px;
+    margin-left: 210px;
+    margin-top: 20px;
+}
+
+.apartado6_2 {
+    width: 50%;
+    float: right;
+    height: 300px;
+}
+
+#mostrarMas {
+    margin-bottom: 40px;
+    color: white;
+    background-color: #2999ad;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 2px;
+    border-style: none;
+    -webkit-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.52); 
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.52);
+}

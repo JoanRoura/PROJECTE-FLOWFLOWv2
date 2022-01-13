@@ -1,0 +1,70 @@
+input[type="radio"]{
+    display: none;
+}
+
+.categorias {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.categorias label {
+    padding: 6px 40px;
+    margin: 10px;
+    font-size: 20px;
+    background: #e2e2e2;
+    border-radius: 5px;
+    cursor: pointer ;
+}
+
+.categorias img:hover {
+    opacity: 0.7;
+}
+
+[value="TODOS"]:checked ~ .productos .producto[data-category~="TODOS"]{
+    display: block;
+}
+
+
+[value="CAMISETAS"]:checked ~ .productos .producto:not([data-category~="CAMISETAS"]),
+[value="SUDADERAS"]:checked ~ .productos .producto:not([data-category~="SUDADERAS"]),
+[value="PANTALONES"]:checked ~ .productos .producto:not([data-category~="PANTALONES"]){
+    display: none;
+}
+
+[value="TODOS"]:checked ~ .categorias [for="TODOS"],
+[value="CAMISETAS"]:checked ~ .categorias [for="CAMISETAS"],
+[value="SUDADERAS"]:checked ~ .categorias [for="SUDADERAS"],
+[value="PANTALONES"]:checked ~ .categorias [for="PANTALONES"]{
+    background:#2999ad;
+    color: #fff;
+}
+
+#tituloRopa h1 {
+    font-weight: 100;
+    font-size: 45px;
+    float: left;
+    margin-left: 15px;
+}
+
+#tituloRopa p{
+    text-align: justify;
+    margin-left: 17px;
+    position: relative;
+    bottom: 25px;
+    width: 1200px;
+}
+
+.menu #a5{
+    background-color: rgb(230, 228, 228);
+    color: #2999ad;
+    text-decoration: none;
+    float: left;
+    height: 30px;
+    width: 16.66666%;
+    text-align: center;
+    padding-top: 12px;
+}
+
