@@ -67,3 +67,15 @@ input[type="radio"]{
     text-align: center;
     padding-top: 12px;
 }
+
+.total {
+    float: left;
+    position: relative;
+    
+}
+
+.shoopingCartTotal {
+    float: left;
+    position: relative;
+    left: 100px;
+}
