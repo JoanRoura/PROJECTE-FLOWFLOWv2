@@ -7,6 +7,7 @@
         <link rel="icon" type="image/png" href="../IMAGENES/logo.png" />
         <title>Paska Doping™ | Suplementos deportivos | Nutrición y Fitness</title>
         <link rel="stylesheet" type="text/css" href="../CSS/css.css">
+        <script src="../JS/jquery-3.3.1.min.js"></script>
     </head>
     <body>
 
@@ -17,8 +18,12 @@
             onmouseover="this.src='../IMAGENES/lupa2.png';"
             onmouseout="this.src='../IMAGENES/lupa.png';">
             <input id="search2" type="search" placeholder="Buscar..."/>
-            <a href=""><img src="../IMAGENES/carrito.png" id="carro"></a>
-            <a href=""><img src="../IMAGENES/userIcon.png" id="user"></a>
+        
+            <h3 id="usuario"></h3> 
+            <a href="" id="cerrar_sesion"><img src="../IMAGENES/marca-x.png" id="tancar" alt=""></a>
+            
+            <a href="carrito.html"><img src="../IMAGENES/carrito.png" id="carro"></a>
+            <a href="login.html"><img src="../IMAGENES/userIcon.png" id="user"></a>
 
         </div>
         <div id="navegacion">
@@ -105,5 +110,15 @@
             <p>Copyright 2021©</p>
         
         </div>
+        <script>
+            //colocar los valores dentro del html
+            $('#usuario').text(localStorage.usuario);
+    
+            //Cerrar sesion 
+            $('#cerrar_sesion').click(function(){
+                localStorage.clear();
+                window.location = "index.html";
+            }); 
+        </script>
     </body>
 </html>

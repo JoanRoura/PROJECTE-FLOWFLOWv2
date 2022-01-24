@@ -12,7 +12,7 @@
     height: 30px;
     width: 16.66666%;
     text-align: center;
-    padding-top: 12px;
+    padding-top: 4px;
 }
 
 #categoria {
@@ -326,4 +326,25 @@
     border-style: none;
     -webkit-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.52); 
     box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.52);
+}
+
+#carroBlog {
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin: 10px;
+    position: relative;
+    left: 350px;
+    top: 20px;
+    padding: 10px;
+}
+#userBlog {
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin: 10px;
+    position: relative;
+    bottom: 125px;
+    right: 50px;
+    padding: 10px;
 }

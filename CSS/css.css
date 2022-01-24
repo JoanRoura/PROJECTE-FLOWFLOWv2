@@ -63,8 +63,8 @@ body {
     float: right;
     margin: 10px;
     position: relative;
-    left: 350px;
-    top: 25px;
+    bottom: 97px;
+    right: 50px;
     padding: 10px;
 }
 #user {
@@ -73,8 +73,8 @@ body {
     float: right;
     margin: 10px;
     position: relative;
-    left: 350px;
-    top: 19px;
+    bottom: 105px;
+    right: 50px;
     padding: 10px;
 }
 
@@ -89,8 +89,7 @@ body {
 }
 
 .menu{
-    width: 100%;
-    overflow: hidden;
+    width: 1580px;
     position: sticky;
     z-index: 100;
 }
@@ -100,9 +99,9 @@ body {
     text-decoration: none;
     float: left;
     height: 30px;
-    width: 16.66666%;
+    width: 16.6666%;
     text-align: center;
-    padding-top: 12px;
+    padding-top: 4px;
 }
 
 .menu a:hover{
@@ -359,73 +358,6 @@ body{
     text-align: left;
     margin-left: 70px;
 }
-.form-register {
-    width: 400px;
-    background: #24303c;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
-    font-family: 'calibri';
-    color: white;
-    box-shadow: 7px 13px 37px #000;
-}
-  
-.form-register h4 {
-  font-size: 22px;
-  margin-bottom: 20px;
-}
-
-.apartados {
-  width: 100%;
-  background: #24303c;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  border: 1px solid #2999ad;
-  font-family: 'calibri';
-  font-size: 18px;
-  color: white;
-}
-
-.apartados2 {
-    width: 100%;
-    background: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #2999ad;
-    font-family: 'calibri';
-    font-size: 18px;
-    color: white;
-}
-
-.form-register p {
-  height: 40px;
-  text-align: center;
-  font-size: 18px;
-  line-height: 40px;
-}
-
-.form-register a {
-  color: white;
-  text-decoration: none;
-}
-
-.form-register a:hover {
-  color: white;
-  text-decoration: underline;
-}
-
-.form-register .botons {
-  width: 100%;
-  background: #2999ad;
-  border: none;
-  padding: 12px;
-  color: white;
-  margin: 16px 0;
-  font-size: 16px;
-}
 
 #telegram1 {
     width: 33%;
@@ -519,3 +451,17 @@ body{
     cursor: pointer;
 }
 
+#usuario {
+    font-size: 12;
+    position: relative;
+    bottom: 30px;
+    left: 350px;
+}
+
+#tancar {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    bottom: 70px;
+    left: 430px;
+}

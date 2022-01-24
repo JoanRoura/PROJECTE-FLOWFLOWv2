@@ -12,7 +12,7 @@
     height: 30px;
     width: 16.66666%;
     text-align: center;
-    padding-top: 12px;
+    padding-top: 4px;
 }
 
 #nutricion {
@@ -32,4 +32,25 @@
     font-size: 20px;
     font-weight: 100;
 
+}
+
+#carroSuple {
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin: 10px;
+    position: relative;
+    left: 350px;
+    top: 20px;
+    padding: 10px;
+}
+#userSuple {
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin: 10px;
+    position: relative;
+    bottom: 125px;
+    right: 50px;
+    padding: 10px;
 }

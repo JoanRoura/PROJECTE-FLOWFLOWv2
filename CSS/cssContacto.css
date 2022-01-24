@@ -12,5 +12,108 @@
     height: 30px;
     width: 16.66666%;
     text-align: center;
-    padding-top: 12px;
+    padding-top: 4px;
+}
+
+.form-register {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+  
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.apartados {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #2999ad;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+.apartados2 {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #2999ad;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: #2999ad;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+#tituloMaps{ 
+  margin-top: 50px;
+  margin-right: 600px;
+  font-weight: lighter;
+  font-size: 40px;
+}
+
+#mapa {
+  width: 950px;
+  height: 600px;
+  margin-top: 10px;
+
+}
+
+#carroContacto {
+  height: 30px;
+  width: 30px;
+  float: right;
+  margin: 10px;
+  position: relative;
+  left: 350px;
+  top: 20px;
+  padding: 10px;
+}
+#userContacto {
+  height: 40px;
+  width: 40px;
+  float: right;
+  margin: 10px;
+  position: relative;
+  bottom: 125px;
+  right: 50px;
+  padding: 10px;
 }

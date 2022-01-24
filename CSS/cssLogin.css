@@ -1,0 +1,123 @@
+.div2{
+    height: 850px;
+}
+
+.login {
+    width: 400px;
+    height: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    position: relative;
+    right: 300px;
+}
+
+.login2 {
+    width: 400px;
+    height: 250px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    float: right;
+    position: relative;
+    bottom: 510px;
+    right: 320px;
+    
+}
+  
+.login h4 {
+  font-size: 27px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+.login2 h4 {
+    font-size: 27px;
+    margin-bottom: 20px;
+    float: left;
+  }
+
+.apartados {
+  width: 370px;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #2999ad;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+.apartados2 {
+    width: 370px;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #2999ad;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.login p {
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
+  float: left;
+}
+
+.login2 p {
+    height: 40px;
+    font-size: 18px;
+    float: left;
+    text-align: justify;
+  }
+
+.login a {
+  color: white;
+  text-decoration: none;
+}
+
+.login a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.botons {
+  width: 370px;
+  background: #2999ad;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  font-weight: bolder;
+  float: left;
+  border-radius: 4px;
+}
+
+.botons2 {
+    width: 370px;
+    background: #2999ad;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    margin-top: 35px;
+    font-size: 16px;
+    font-weight: bolder;
+    float: left;
+    border-radius: 4px;
+  }
