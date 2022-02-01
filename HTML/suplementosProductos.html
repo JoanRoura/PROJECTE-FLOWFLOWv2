@@ -14,7 +14,10 @@
         <div class="div1">
 
             <a href="index.html"><img src="../IMAGENES/logo.png" id="logo"></a>
-            <input id="search2" class="productos-filter" type="search" placeholder="Buscar..."/>
+            <input type="image" class="search" id="lupa" value="Buscar" src="../IMAGENES/lupa.png"
+            onmouseover="this.src='../IMAGENES/lupa2.png';"
+            onmouseout="this.src='../IMAGENES/lupa.png';">
+            <input id="search2" type="search" placeholder="Buscar..."/>
             <a href=""><img src="../IMAGENES/carrito.png" id="carro"></a>
             <a href=""><img src="../IMAGENES/userIcon.png" id="user"></a>
 
@@ -74,7 +77,7 @@
                     
                 </div>
 
-                <article class="productos">
+                <div class="productos">
                     <div class="">
     
                         <br><br>
@@ -192,7 +195,6 @@
                         </tr>  
                         </table>
                     </div>
-                </article>
                 </div>
 
 
@@ -220,31 +222,5 @@
         </div>
     
     <script src="../JS/main.js"></script>
-    <script>
-        const d = document;
-        function searchFilters(input,selector){
-        
-        d.addEventListener("keyup", e=>{
-            if(e.target.matches(input)){
-                //console.log(e.key);
-                console.log(e.target.value)
-            d.querySelectorAll(selector).forEach((el) => 
-            el.textContent.toLowerCase().includes(e.target.value)
-            ? el.classList.remove("filter")
-            : el.classList.add("filter")
-            );
-            }
-        })
-    }
-    </script>
-    
-    <script>
-    const a = document;
-
-    a.addEventListener("DOMContentLoaded", (e) => {
-    searchFilters(".productos-filter",".producto")
-    });
-
-    </script>
     </body>
 </html>
