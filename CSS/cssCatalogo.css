@@ -54,3 +54,11 @@
     right: 50px;
     padding: 10px;
 }
+
+#oferta {
+    transition: transform .2s; 
+}
+ 
+#oferta:hover {
+    transform: scale(1.1); 
+}

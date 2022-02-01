@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="../IMAGENES/logo.png" />
+        <title>Paska Doping™ | Suplementos deportivos | Nutrición y Fitness</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/css.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/cssRegistro.css">
+        
+
+    </head>
+    <body>
+
+        <div class="div1">
+
+            <a href="index.html"><img src="../IMAGENES/logo.png" id="logo"></a>
+            <input type="image" class="search" id="lupa" value="Buscar" src="../IMAGENES/lupa.png"
+            onmouseover="this.src='../IMAGENES/lupa2.png';"
+            onmouseout="this.src='../IMAGENES/lupa.png';">
+            <input id="search2" type="search" placeholder="Buscar..."/>
+            <a href="carrito.html"><img src="../IMAGENES/carrito.png" id="carro"></a>
+            <a href="login.html"><img src="../IMAGENES/userIcon.png" id="user"></a>
+
+        </div>
+        <div>
+            
+        </div>
+
+        <div class="div2">
+            <section class="form-register" >
+                <h4>Registro</h4>
+                <form role="form" onsubmit="signUp(event);" autocomplete="off">
+                    <div class="form-group">
+                        <input type="text" name="nombre" id="nombre" placeholder="Introduzca su nombre">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="apellido" id="apellido" placeholder="Introduzca su apellido">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="email" id="email" placeholder="Introduzca su email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="pwd" id="pwd" placeholder="Introduzca su contraseña">
+                    </div>
+                    <div class="">
+                        <button type="submit">Registrarse</button>
+                    </div>
+                    <p><a href="login.html">Ya tienes cuenta?</a></p>
+                </form>
+            </section>
+        </div>
+
+        <div class="footer">
+        
+            <p>Paska Doping</p>
+            <p>Copyright 2021©</p>
+        
+        </div>
+
+        <script type="text/javascript" src="../JS/register.js"></script>
+    </body>
+</html>
