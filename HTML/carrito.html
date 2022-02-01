@@ -6,9 +6,10 @@
         <link rel="icon" type="image/png" href="../IMAGENES/logo.png" />
         <title>Paska Doping™ | Suplementos deportivos | Nutrición y Fitness</title>
         <link rel="stylesheet" type="text/css" href="../CSS/css.css">
-        <link rel="stylesheet" type="text/css" href="../CSS/cssCarrito.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/carrito.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/botoCarrito.css">
     </head>
-    <body>
+    <body class="fonsCarrito">
 
         <div class="div1">
 
@@ -45,14 +46,29 @@
             </nav>
         </div>
 
-        <div class="div2" style="text-align: left;">
+        <div class="div2 fonsCarrito" style="text-align: left;">
 
-            <h3>Tu Carrito</h3>
+            <h2 class="titolCarrito">Tu Carrito</h2>
+                <p class="objeto1Carrito">Descripcion</p>
+                <p class="objeto2Carrito">Tamaño</p>
+                <p class="objeto3Carrito">Precio</p>
           
 
         </div>
+        <div class="itemStorage">
+            <div class="shoopingCartItemsContainer">
+                <hr class="lineaCarritoSota">
+            </div>
+        </div>
+        <div class="containerPreu">
+            <p class="total totalCistella">Total Cistella:</p>
+            <p class="shoopingCartTotal">0€</p>
+            <p class="shoopingCartItems"></p>
+            <button class="comprarButton">Comprar</button>
+        </div>
+        
 
-        <div class="div2">
+        <div class="div2 fonsCarrito">
 
             <br><br><br><br><br>
 
@@ -72,5 +88,6 @@
             <p>Copyright 2021©</p>
         
         </div>
+        <script src="../JS/carrito.js"></script>
     </body>
 </html> 

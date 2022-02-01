@@ -1,0 +1,152 @@
+.itemStorage {
+    background-color: white;
+}
+
+.shoopingCartItemsContainer {
+    background-color: white;
+}
+
+.imatgeCarrito {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    right:  600px;
+    bottom: 40px;
+}
+
+.shoopingCartItemTitle {
+    position: relative;
+    left: 200px;
+    bottom: 40px;
+}
+
+.shoopingCartItemPrice {
+    position: relative;
+    left: 950px;
+    bottom: 169px;
+    font-size: 17px;
+    color: black;
+}
+
+.lineaCarrito {
+    width: 1250px;
+    position: relative;
+    bottom: 130px;
+    margin-bottom: -70px;
+    margin-top: -45px;
+}
+
+.lineaCarritoSota {
+    width: 1250px;
+    position: relative;
+    bottom: 40px;
+}
+
+.shoopingCartItemQuantity {
+    width: 40px;
+    height: 20px;
+    position: relative;
+    bottom: 250px;
+    left: 160px;
+}
+
+.buttonDelete {
+    border: none;
+    background-color: white;
+    position: relative;
+    bottom: 242px;
+    left: 480px;
+}
+
+.containerPreu {
+    background-color: rgb(241, 240, 240);
+    width: 700px;
+    height: 75px;
+    position: relative;
+    left: 600px;
+}
+
+.totalCistella {
+    font-family: Biotif,"Noto Sans","Noto Sans JP","Noto Sans KR",Helvetica;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+    position: relative;
+    right: 260px;
+    top: 25px;
+}
+
+.shoopingCartTotal {
+    font-size: 20px;
+    position: relative;
+    left: 240px;
+    bottom: 15px;
+    font-weight: bolder;
+}
+
+.fonsCarrito {
+    background-color: white;
+    
+}
+
+.comprarButton {
+    width: 120px;
+    background: #2999ad;
+    border: none;
+    padding: 8px;
+    color: white;
+    margin: 4px 0;
+    font-size: 13px;
+    font-weight: bolder;
+    float: left;
+    border-radius: 4px;
+    margin-left: 65px;
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.52);
+    position: relative;
+    left: 475px;
+    top: 10px;
+}
+
+.comprarButton:hover {
+    opacity: 0.7;
+}
+
+.imatgeCreu {
+    height: 22px;
+    width: 22px;
+    border-radius: 10px;
+}
+
+.imatgeCreu:hover {
+    opacity: 0.5;
+}
+
+.peuCarrito {
+    background-color: white;
+}
+
+.titolCarrito {
+    font-family: Biotif,"Noto Sans","Noto Sans JP","Noto Sans KR",Helvetica;
+    font-size: 30px;
+}
+
+.objeto1Carrito {
+    font-weight: bold;
+    position: relative;
+    top: 70px;
+    left: 20px;
+}
+
+.objeto2Carrito {
+    font-weight: bold;
+    position: relative;
+    top: 36px;
+    left: 750px;
+}
+
+.objeto3Carrito {
+    font-weight: bold;
+    position: relative;
+    top: 3px;
+    left: 1000px;
+}

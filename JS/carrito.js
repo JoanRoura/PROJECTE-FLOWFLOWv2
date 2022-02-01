@@ -8,64 +8,67 @@ comprarButton.addEventListener('click', comprarButtonClicked);
 
 const shoopingCartItemsContainer = document.querySelector('.shoopingCartItemsContainer');
 
-function addToCartClicked(event) {
-    const button = event.target;
-    const item = button.closest('.producto');
-    
+let itemTitles = [];
+let itemPrices = [];
+let itemImages = [];
 
-    
-    const itemTitle = item.querySelector('.h4').textContent;
-    const itemPrice = item.querySelector('.pvp').textContent;
-    const itemImage = item.querySelector('.imatge').src;
+itemTitles = JSON.parse(localStorage.getItem('nomProductes'));
+itemPrices = JSON.parse(localStorage.getItem('preuProductes'));
+itemImages = JSON.parse(localStorage.getItem('imatgeProductes'));
 
-    addItemToShoopingCart(itemTitle, itemPrice, itemImage);
-}
+var borrarTitle = itemTitles.shift();
+var borrarPrices = itemPrices.shift();
+var borrarImages = itemImages.shift();
 
-function addItemToShoopingCart(itemTitle, itemPrice, itemImage) {
+addItemToShoopingCart(itemTitles, itemPrices, itemImages);
+
+function addItemToShoopingCart(itemTitles, itemPrices, itemImages) {
+    console.log(itemImages, itemPrices, itemTitles);
     const elementsTitle = shoopingCartItemsContainer.getElementsByClassName(
         'shoopingCartItemTitle'
     );
 
     for (let i = 0; i < elementsTitle.length; i++) {
-        if (elementsTitle[i].innerText === itemTitle) {
+        if (elementsTitle[i].innerText === itemTitles) {
             let elementQuantity = elementsTitle[i].parentElement.
             querySelector(
                 '.shoopingCartItemQuantity'
             );
             elementQuantity.value++;
-            //$('.toast').toast('show');
             updateShoopingCartTotal();
             return;
         }
     }
+    //if(itemTitles !== null) {   
+    for (let i = 0; i < itemTitles.length; i++) {
+        const shoopingCartRow = document.createElement('div');
+        const shoopingCartContent = `
+        <table style="margin: 0 auto;" id="">
+            <tr>
+                <div class="producto shoopingCartItem" data-category="BARRITAS">
+                    <img src=${itemImages[i]} class="imatge imatgeCarrito">
+                    <h4 class="h4 shoopingCartItemTitle">${itemTitles[i]}</h4>  
+                    <p class="star"></p><p class="valoracions"></p><br>
+                    <p class="pvp shoopingCartItemPrice">${itemPrices[i]}</p>
+                    <pr class="pf"></p>   
+                    <input class="shoopingCartItemQuantity" type="number" value="1">
+                    <button class="buttonDelete"><img style="border-radius: 400px;" class="imatgeCreu" src="../IMAGENES/Creu Negra.png"/></button>
+                    <hr class="lineaCarrito">
+                </div>
+            </tr>
+        </table>`;
+        shoopingCartRow.innerHTML = shoopingCartContent;
+        shoopingCartItemsContainer.append(shoopingCartRow);
 
-    const shoopingCartRow = document.createElement('div');
-    const shoopingCartContent = `
-    <table style="margin: 0 auto;" id="">
-        <tr>
-            <div class="producto shoopingCartItem" data-category="BARRITAS">
-                <img src=${itemImage} class="imatge">
-                <h4 class="h4 shoopingCartItemTitle">${itemTitle}</h4>  
-                <p class="star">✬✬✬✬☆</p><p class="valoracions">(9)</p><br>
-                <p class="pvp shoopingCartItemPrice">${itemPrice}</p>
-                <pr class="pf">16,99€</p>   
-                <input class="shoopingCartItemQuantity" type="number" value="1">
-                <button class="buttonDelete">Borrar Prodcuto</button>
-            </div>
-        </tr>
-    </table>`;
-    shoopingCartRow.innerHTML = shoopingCartContent;
-    shoopingCartItemsContainer.append(shoopingCartRow);
+        shoopingCartRow
+            .querySelector('.buttonDelete')
+            .addEventListener('click', removeShoopingCartItem);
 
-    shoopingCartRow
-        .querySelector('.buttonDelete')
-        .addEventListener('click', removeShoopingCartItem);
+            shoopingCartRow.querySelector('.shoopingCartItemQuantity').
+            addEventListener('change', quantityChanged);
 
-        shoopingCartRow.querySelector('.shoopingCartItemQuantity').
-        addEventListener('change', quantityChanged);
-
-    updateShoopingCartTotal()
-    
+        updateShoopingCartTotal();
+    }
 }
 
 function updateShoopingCartTotal() {
@@ -109,6 +112,3 @@ function comprarButtonClicked() {
     shoopingCartItemsContainer.innerHTML = '';
     updateShoopingCartTotal();
 }
-
-
-
