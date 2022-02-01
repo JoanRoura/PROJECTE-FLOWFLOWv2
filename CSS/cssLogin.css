@@ -109,15 +109,25 @@
 }
 
 .botons2 {
-    width: 370px;
-    background: #2999ad;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
-    margin-top: 35px;
-    font-size: 16px;
-    font-weight: bolder;
-    float: left;
-    border-radius: 4px;
-  }
+  width: 370px;
+  background: #2999ad;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  margin-top: 35px;
+  font-size: 16px;
+  font-weight: bolder;
+  float: left;
+  border-radius: 4px;
+}
+
+.form-group button {
+  width: 100%;
+  background: #2999ad;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
