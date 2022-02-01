@@ -6,9 +6,9 @@
         <link rel="icon" type="image/png" href="../IMAGENES/logo.png" />
         <title>Paska Doping™ | Suplementos deportivos | Nutrición y Fitness</title>
         <link rel="stylesheet" type="text/css" href="../CSS/css.css">
-        <link rel="stylesheet" type="text/css" href="../CSS/cssSnacks.css">
-        <script src="../JS/scrollreveal.js"></script>
-        
+        <script src="../JS/scrollreveal.js"></script>   
+
+
 
     </head>
     <body>
@@ -16,14 +16,13 @@
         <div class="div1">
 
             <a href="index.html"><img src="../IMAGENES/logo.png" id="logo"></a>
-            <input type="image" class="search" id="lupa" value="Buscar" src="../IMAGENES/lupa.png"
-            onmouseover="this.src='../IMAGENES/lupa2.png';"
-            onmouseout="this.src='../IMAGENES/lupa.png';">
-            <input id="search2" type="search" placeholder="Buscar..."/>
+            <input id="search2" class="productos-filter" type="search" placeholder="Buscar..."/>
             <a href="carrito.html"><img src="../IMAGENES/carrito.png" id="carroSnacks"></a>
             <a href=""><img src="../IMAGENES/userIcon.png" id="userSnacks"></a>
 
         </div>
+        
+
         <div id="navegacion">
             <nav class="menu" >
                 <div class="box0">
@@ -74,19 +73,21 @@
                     
                 </div>
 
-                <div class="productos">
-                    <div class="">
-    
+                <article class="productos">
+                  
+                    
+                        
                         <br><br>
-    
-                        <table style="margin: 0 auto;" id="">
+                        
+                    <table class ="productos" style="margin: 0 auto;" id="">
+             
                         <tr>
                             <td class="producto" data-category="BARRITAS">
                                 <img src="../IMAGENES/rosa1.jpg" class="imatge" 
                                 onmouseover="this.src='../IMAGENES/rosa.jpg';"
                                 onmouseout="this.src='../IMAGENES/rosa1.jpg';">
                                 <h4 class="h4">Layered Rosa</h4>  
-                                <p class="star">✬✬✬✬☆</p><p class="valoracions">(9)</p><br>
+                                <p c ass="star">✬✬✬✬☆</p><p class="valoracions">(9)</p><br>
                                 <p class="pvp">P.V.P: 19.99€</p>
                                 <p class="pf">16.99€</p>  
                                 <button class="addToCart">Añadir al carrito</button>   
@@ -205,17 +206,23 @@
                                 <p class="pf">20.49€</p>       
                                 <button class="addToCart">Añadir al carrito</button>     
                             </td>
-                        </tr>  
+                            
+
+                    
+                        </tr>
+                        
+                        </tr>
+                            </td>  
                         </table>
-                    </div>
-                </div>
+                    
+                </article>
 
                 <br/>
                 <br/>
                 <br/>
                 <br/>
                 
-                <div class="shoopingCartItemsContainer">
+                <!-- <div class="shoopingCartItemsContainer">
                     <h1 class="carrito">Carrito</h1>
                 </div>
                 <div>
@@ -226,6 +233,7 @@
                         <button class="comprarButton">Comprar</button>
                     </div>
                 </div>
+            -->
             </div>
         </div>         
                         
@@ -247,8 +255,39 @@
             <p>Copyright 2021©</p>
         
         </div>
+        
+        
     
-    <script src="../JS/main.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../CSS/cssSnacks.css">
     <script src="Prova1Carrito.js"></script>
+    <script src="../JS/main.js"></script>
+
+    <script>
+        const d = document;
+        function searchFilters(input,selector){
+        
+        d.addEventListener("keyup", e=>{
+            if(e.target.matches(input)){
+                //console.log(e.key);
+                console.log(e.target.value)
+            d.querySelectorAll(selector).forEach((el) => 
+            el.textContent.toLowerCase().includes(e.target.value)
+            ? el.classList.remove("filter")
+            : el.classList.add("filter")
+            );
+            }
+        })
+    }
+    </script>
+    
+    <script>
+    const a = document;
+
+    a.addEventListener("DOMContentLoaded", (e) => {
+    searchFilters(".productos-filter",".producto")
+    });
+
+    </script>
     </body>
 </html>

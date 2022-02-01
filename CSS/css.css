@@ -465,3 +465,6 @@ body{
     bottom: 70px;
     left: 430px;
 }
+.filter{
+    display: none;
+}
